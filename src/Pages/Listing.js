@@ -91,14 +91,14 @@ function Listing() {
 
       <div className="listingDetails">
         <p className="listingName">
-          {listing.name} - $
+          {listing.name} -
           {listing.offer
             ? listing.discountedPrice
                 .toString()
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
             : listing.regularPrice
                 .toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Rs
         </p>
         <p className="listingLocation">{listing.location}</p>
         <p className="listingType">
