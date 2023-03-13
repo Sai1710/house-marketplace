@@ -75,8 +75,8 @@ function Slider() {
               />
               <p className="swiperSlideText">{data.name}</p>
               <p className="swiperSlidePrice">
-                {data.offer ? data.discountedPrice : data.regularPrice}{" "}
-                {data.type === "rent" && "/ month"} Rs
+                {data.offer ? data.discountedPrice : data.regularPrice}{" "} Rs
+                {data.type === "rent" && "/ month"}
               </p>
             </>
           ))}
